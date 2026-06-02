@@ -1,4 +1,3 @@
-// Lightweight inline SVG icons — no external icon library needed.
 const base = {
   width: 20,
   height: 20,

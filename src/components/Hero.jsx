@@ -9,7 +9,6 @@ const roles = [
   'MLOps Practitioner',
 ]
 
-// Simple typewriter that cycles through the roles above.
 function useTypewriter(words, speed = 90, pause = 1600) {
   const [text, setText] = useState('')
   const [i, setI] = useState(0)

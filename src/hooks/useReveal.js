@@ -1,7 +1,5 @@
 import { useEffect } from 'react'
 
-// Adds an `is-visible` class to any element with the `reveal` class
-// once it scrolls into view. Powers the fade/slide-in animations.
 export default function useReveal() {
   useEffect(() => {
     const els = document.querySelectorAll('.reveal')

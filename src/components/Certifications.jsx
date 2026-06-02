@@ -2,11 +2,9 @@ import { useEffect, useState } from 'react'
 import { certifications } from '../data'
 import { ExternalLink } from './Icons'
 
-// The enlarged lightbox that shows a single certificate on its own.
 function CertModal({ cert, onClose }) {
   const [imgFailed, setImgFailed] = useState(false)
 
-  // Close on Escape and lock background scroll while open.
   useEffect(() => {
     const onKey = (e) => e.key === 'Escape' && onClose()
     document.addEventListener('keydown', onKey)
@@ -17,6 +15,8 @@ function CertModal({ cert, onClose }) {
     }
   }, [onClose])
 
+  const isPdf = /\.pdf($|\?)/i.test(cert.file || '')
+
   return (
     <div className="cert-modal" onClick={onClose} role="dialog" aria-modal="true">
       <div className="cert-modal__box" onClick={(e) => e.stopPropagation()}>
@@ -25,12 +25,20 @@ function CertModal({ cert, onClose }) {
         </button>
 
         <div className="cert-modal__media">
-          {cert.image && !imgFailed ? (
-            <img src={cert.image} alt={cert.name} onError={() => setImgFailed(true)} />
+          {cert.file && !imgFailed ? (
+            isPdf ? (
+              <iframe
+                className="cert-modal__pdf"
+                src={`${cert.file}#view=FitH`}
+                title={cert.name}
+              />
+            ) : (
+              <img src={cert.file} alt={cert.name} onError={() => setImgFailed(true)} />
+            )
           ) : (
             <div className="cert-modal__placeholder">
               <span className="cert-modal__placeholder-icon">✦</span>
-              <p>Certificate image not added yet</p>
+              <p>Certificate file not added yet</p>
               <code>public/certs/</code>
             </div>
           )}
@@ -41,11 +49,18 @@ function CertModal({ cert, onClose }) {
           <p>
             {cert.issuer} · {cert.year}
           </p>
-          {cert.link && (
-            <a className="cert-modal__verify" href={cert.link} target="_blank" rel="noreferrer">
-              <ExternalLink /> Verify credential
-            </a>
-          )}
+          <div className="cert-modal__actions">
+            {cert.file && (
+              <a className="cert-modal__open" href={cert.file} target="_blank" rel="noreferrer">
+                Open full certificate ↗
+              </a>
+            )}
+            {cert.link && (
+              <a className="cert-modal__verify" href={cert.link} target="_blank" rel="noreferrer">
+                <ExternalLink /> Verify credential
+              </a>
+            )}
+          </div>
         </div>
       </div>
     </div>

@@ -1,6 +1,9 @@
 node_modules
 dist
 dist-ssr
+
+# Staging folder for raw certificate files (copies live in public/certs/)
+certif/
 *.local
 .DS_Store
 .vscode/*

@@ -1,11 +1,7 @@
-// ─────────────────────────────────────────────────────────────────────────────
-// All portfolio content lives here. Edit this file to update the site.
-// ─────────────────────────────────────────────────────────────────────────────
 
 export const profile = {
   name: 'Rayen Nacef',
   title: 'AI Engineer',
-  // 👇 Drop your photo at  public/avatar.jpg  and it will appear automatically.
   avatar: './avatar.jpg',
   summary:
     'AI Engineer with experience across the full ML lifecycle — from data pipelines and fine-tuning to RAG systems and production deployment. Research background in LLM optimization and RL. Actively seeking a professional position to apply and grow my skills in a real-world engineering environment.',
@@ -16,7 +12,6 @@ export const profile = {
 export const contacts = {
   email: 'rayennacef2@gmail.com',
   phone: '+216 24 639 522',
-  // ⚠️ Placeholders — replace with your real profile URLs.
   linkedin: 'https://www.linkedin.com/in/rayen-nacef',
   github: 'https://github.com/rayennacef',
 }
@@ -75,8 +70,6 @@ export const experience = [
   },
 ]
 
-// 👇 Replace each `repo` with the real GitHub repository URL for that project.
-//    They currently point to your GitHub profile as a placeholder.
 export const projects = [
   {
     name: 'CryptoFacial Recognition System',
@@ -141,61 +134,55 @@ export const education = [
   },
 ]
 
-// Add as many certifications as you like — the grid grows automatically.
-// Clicking a card opens an enlarged lightbox showing the certificate image.
-//
-// Fields:
-//   name   – certificate title
-//   issuer – who issued it
-//   year   – year obtained
-//   image  – path to the certificate scan/screenshot. Drop the file in
-//            public/certs/  and reference it as './certs/<file>'.
-//            If omitted, the lightbox shows the details instead of an image.
-//   link   – (optional) credential-verification URL shown as a "Verify" button.
-//
-// ⚠️ These are EXAMPLE entries — replace them with your real certifications.
 export const certifications = [
   {
-    name: 'Deep Learning Specialization',
-    issuer: 'DeepLearning.AI · Coursera',
-    year: '2024',
-    image: './certs/deep-learning-specialization.jpg',
-    link: '',
-  },
-  {
-    name: 'Machine Learning',
-    issuer: 'Stanford University · Coursera',
-    year: '2023',
-    image: './certs/machine-learning-stanford.jpg',
-    link: '',
-  },
-  {
-    name: 'MITACS Globalink Research Internship',
-    issuer: 'Mila & Polytechnique Montréal',
+    name: 'Intro to AI Agents and Agentic AI',
+    issuer: '365 Data Science',
     year: '2025',
-    image: './certs/mitacs-globalink.jpg',
-    link: '',
+    file: './certs/intro-ai-agents-agentic-ai.pdf',
+    link: 'https://learn.365datascience.com/certificates/CC-AAB148EA22/',
   },
   {
-    name: 'TensorFlow Developer Certificate',
-    issuer: 'Google',
+    name: 'Build Conversational AI Memory with LangGraph',
+    issuer: '365 Data Science',
+    year: '2025',
+    file: './certs/conversational-ai-memory-langgraph.pdf',
+    link: 'https://learn.365datascience.com/certificates/CC-20BB2AA8CB/',
+  },
+  {
+    name: 'MCPs for Everyone: Supercharge Your AI Tooling Skills',
+    issuer: '365 Data Science',
+    year: '2025',
+    file: './certs/mcps-supercharge-ai-tooling.pdf',
+    link: 'https://learn.365datascience.com/certificates/CC-B4C140FF30/',
+  },
+  {
+    name: 'Fully Automated MLOps',
+    issuer: '365 Data Science',
+    year: '2025',
+    file: './certs/fully-automated-mlops.pdf',
+    link: 'https://learn.365datascience.com/certificates/CC-EB818DDD31/',
+  },
+  {
+    name: 'AI Model Deployment on AWS',
+    issuer: '365 Data Science',
+    year: '2025',
+    file: './certs/ai-model-deployment-aws.pdf',
+    link: 'https://learn.365datascience.com/certificates/CC-167FD220B2/',
+  },
+  {
+    name: 'Hashgraph Developer Course',
+    issuer: 'The Hashgraph Association',
     year: '2024',
-    image: './certs/tensorflow-developer.jpg',
+    file: './certs/hashgraph-developer-course.pdf',
     link: '',
   },
   {
-    name: 'AWS Certified Cloud Practitioner',
-    issuer: 'Amazon Web Services',
+    name: 'Introduction and Programming with IoT Boards',
+    issuer: 'POSTECH · Coursera',
     year: '2024',
-    image: './certs/aws-cloud-practitioner.jpg',
-    link: '',
-  },
-  {
-    name: 'Docker & Kubernetes',
-    issuer: 'Udemy',
-    year: '2023',
-    image: './certs/docker-kubernetes.jpg',
-    link: '',
+    file: './certs/iot-boards-postech.pdf',
+    link: 'https://coursera.org/verify/ND68RM35EVHN',
   },
 ]
 
