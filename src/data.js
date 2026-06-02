@@ -12,15 +12,15 @@ export const profile = {
 export const contacts = {
   email: 'rayennacef2@gmail.com',
   phone: '+216 24 639 522',
-  linkedin: 'https://www.linkedin.com/in/rayen-nacef',
-  github: 'https://github.com/rayennacef',
+  linkedin: 'https://www.linkedin.com/in/rayen-nacef-34259029b/',
+  github: 'https://github.com/RayenNacef',
 }
 
 export const stats = [
   { value: '8→1', label: 'GPUs reduced in LLM training' },
   { value: '+13%', label: 'Math reasoning accuracy (GRPO)' },
   { value: '-30%', label: 'False positives in IDS' },
-  { value: '4+', label: 'AI engineering roles' },
+  { value: '5+', label: 'AI engineering roles' },
 ]
 
 export const experience = [
@@ -67,6 +67,17 @@ export const experience = [
       'Developed an AI-powered network diagnostic assistant capable of parsing Wireshark packet capture files and generating natural-language root-cause analysis, reducing manual inspection time.',
     ],
     tags: ['LLM', 'RAG', 'Pandas', 'Hugging Face', 'Ollama', 'Docker', 'NLP'],
+  },
+  {
+    role: 'AI Engineer Intern',
+    company: 'LARA Laboratory, ENSI',
+    location: 'Tunisia',
+    period: 'Jul – Aug 2023',
+    points: [
+      'Built an AI web application for classifying anomalies impacting electric vehicle performance, enhancing predictive accuracy.',
+      'Designed a user-friendly interface to deliver a smooth, accessible user experience.',
+    ],
+    tags: ['Linear Regression', 'Flask', 'Python', 'HTML', 'CSS'],
   },
 ]
 

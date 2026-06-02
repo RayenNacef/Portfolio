@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { contacts, profile } from '../data'
-import { Mail, Linkedin, Github, Phone, Download } from './Icons'
+import { contacts } from '../data'
+import { Mail, Linkedin, Github, Phone } from './Icons'
 
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', message: '' })
@@ -57,9 +57,6 @@ export default function Contact() {
               </a>
               <a href={contacts.github} target="_blank" rel="noreferrer" className="contact__social">
                 <Github /> GitHub
-              </a>
-              <a href={profile.resume} download className="contact__social">
-                <Download /> Résumé
               </a>
             </div>
           </div>

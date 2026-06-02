@@ -62,9 +62,6 @@ export default function Navbar({ theme, onToggleTheme }) {
               {l.label}
             </a>
           ))}
-          <a className="nav__cta" href={profile.resume} download onClick={() => setOpen(false)}>
-            Résumé ↓
-          </a>
         </nav>
 
         <div className="nav__controls">

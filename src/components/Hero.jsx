@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { profile, contacts, stats } from '../data'
-import { Mail, Linkedin, Github, Download } from './Icons'
+import { Mail, Linkedin, Github } from './Icons'
 
 const roles = [
   'AI Engineer',
@@ -81,11 +81,8 @@ export default function Hero() {
           <p className="hero__summary">{profile.summary}</p>
 
           <div className="hero__actions">
-            <a className="btn btn--primary" href={profile.resume} download>
-              <Download /> Download Résumé
-            </a>
             <a
-              className="btn btn--ghost"
+              className="btn btn--primary"
               href="#contact"
               onClick={(e) => {
                 e.preventDefault()
@@ -93,6 +90,16 @@ export default function Hero() {
               }}
             >
               Get in touch
+            </a>
+            <a
+              className="btn btn--ghost"
+              href="#projects"
+              onClick={(e) => {
+                e.preventDefault()
+                document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })
+              }}
+            >
+              View projects
             </a>
           </div>
 
