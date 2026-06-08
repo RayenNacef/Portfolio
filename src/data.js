@@ -17,9 +17,9 @@ export const contacts = {
 }
 
 export const stats = [
-  { value: '8→1', label: 'GPUs reduced in LLM training' },
-  { value: '+13%', label: 'Math reasoning accuracy (GRPO)' },
-  { value: '-30%', label: 'False positives in IDS' },
+  { value: '1', label: 'Research Experience' },
+  { value: '+5', label: 'Projects' },
+  { value: '+7', label: 'AI Certifications' },
   { value: '5+', label: 'AI engineering roles' },
 ]
 
