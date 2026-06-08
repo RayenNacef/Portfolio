@@ -209,11 +209,19 @@ export const skills = [
   },
   {
     group: 'MLOps & DevOps',
-    items: ['Docker', 'Kubernetes', 'CI/CD', 'GitLab', 'Minikube', 'Slurm', 'HPC', 'Linux Bash'],
+    items: ['Docker', 'Kubernetes', 'CI/CD', 'GitLab', 'Minikube'],
   },
   {
     group: 'Frameworks',
-    items: ['FastAPI', 'Flask', 'Spring Boot', 'Angular', 'PyTorch', 'TensorFlow', 'Keras', 'Pandas', 'Scikit-learn'],
+    items: ['FastAPI', 'Flask', 'Spring Boot', 'Angular'],
+  },
+  {
+    group: 'ML Libraries',
+    items: ['PyTorch', 'TensorFlow', 'Keras', 'Pandas', 'Scikit-learn'],
+  },
+  {
+    group: 'HPC, OS & Shell',
+    items: ['Slurm', 'Linux', 'Bash'],
   },
   { group: 'Databases', items: ['PostgreSQL', 'SQL', 'Redis'] },
   { group: 'Tools', items: ['Git', 'GitHub', 'VS Code', 'Keil', 'IntelliJ IDEA'] },
