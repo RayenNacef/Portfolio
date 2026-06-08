@@ -39,7 +39,7 @@ export const experience = [
     role: 'AI Research Intern — MITACS Program',
     company: 'Mila & Polytechnique Montréal',
     location: 'Canada',
-    period: 'Jul – Sep 2025',
+    period: 'Jul – Oct 2025',
     points: [
       'Optimized Open-R1 LLM training infrastructure, reducing GPU requirements from 8 to 1 while preserving model performance through memory-efficient techniques and gradient checkpointing.',
       'Designed a novel token-level credit assignment mechanism for Group Relative Policy Optimization (GRPO), achieving a 13% improvement in mathematical reasoning accuracy on benchmark evaluations.',
