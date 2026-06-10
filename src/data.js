@@ -18,8 +18,8 @@ export const contacts = {
 
 export const stats = [
   { value: '1', label: 'Research Experience' },
-  { value: '+5', label: 'Projects' },
-  { value: '+7', label: 'AI Certifications' },
+  { value: '+6', label: 'Projects' },
+  { value: '+8', label: 'Verified Certifications' },
   { value: '5+', label: 'AI engineering roles' },
 ]
 
@@ -83,6 +83,18 @@ export const experience = [
 
 export const projects = [
   {
+    name: 'Insurance Claims Prediction',
+    field: 'Machine Learning & Actuarial Analytics',
+    period: 'Janv 2026',
+    repo: 'https://github.com/RayenNacef/Insurance-Claims-Prediction.git',
+    points: [
+    'Modeled car insurance claim counts using Poisson GLM and XGBoost (Poisson objective) on the French MTPL dataset (~700k policies), achieving 48% deviance reduction over baseline.',
+    'Applied exposure offset modeling, risk-based feature engineering, and RandomizedSearchCV tuning to handle class imbalance and varying policy durations.',
+    ],
+    tags: ['Python', 'XGBoost', 'Poisson Regression', 'scikit-learn', 'Feature Engineering', 'Insurance Pricing'],
+    category: 'Machine Learning',
+  },
+  {
     name: 'CryptoFacial Recognition System',
     field: 'Embedded AI & Security',
     period: 'Dec 2024 – Jan 2025',
@@ -93,18 +105,6 @@ export const projects = [
     ],
     tags: ['Python', 'OpenCV', 'CNN', 'AES Encryption', 'ESP32', 'Deep Learning'],
     category: 'Embedded AI',
-  },
-  {
-    name: 'Insurance Claims Prediction',
-    field: 'Machine Learning & Actuarial Analytics',
-    period: 'Janv 2026',
-    repo: contacts.github,
-    points: [
-    'Modeled car insurance claim counts using Poisson GLM and XGBoost (Poisson objective) on the French MTPL dataset (~700k policies), achieving 48% deviance reduction over baseline.',
-    'Applied exposure offset modeling, risk-based feature engineering, and RandomizedSearchCV tuning to handle class imbalance and varying policy durations.',
-    ],
-    tags: ['Python', 'XGBoost', 'Poisson Regression', 'scikit-learn', 'Feature Engineering', 'Insurance Pricing'],
-    category: 'Machine Learning',
   },
   {
     name: 'FreeRTOS-Based Real-Time Robot Control',
@@ -122,7 +122,7 @@ export const projects = [
     name: 'Intelligent Intrusion Detection for CPS',
     field: 'ML & Cybersecurity',
     period: 'May – Jul 2024',
-    repo: contacts.github,
+    repo: 'https://github.com/RayenNacef/Intelligent-Intrusion-Detection-for-CPS.git',
     points: [
       'Benchmarked four ML classification algorithms for real-time network intrusion detection in Cyber-Physical Systems (CPS).',
       'Designed a dynamic algorithm selection module that reduced false-positive rate by 30% compared to single-model baselines.',
