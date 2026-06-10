@@ -199,7 +199,7 @@ export const certifications = [
     name: 'Certification of Program Completion',
     issuer: 'Mitacs · Globalink',
     year: '2025',
-    file: './certs/image.png',
+    file: '/certs/image.png',
     link: '',
   },
 ]
