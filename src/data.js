@@ -86,13 +86,25 @@ export const projects = [
     name: 'CryptoFacial Recognition System',
     field: 'Embedded AI & Security',
     period: 'Dec 2024 – Jan 2025',
-    repo: contacts.github,
+    repo: 'https://github.com/RayenNacef/CryptoFacial-Recognition.git',
     points: [
       'Built a real-time facial recognition system with OpenCV and deep CNN-based face embeddings, deployed on an ESP32 edge device.',
       'Secured client-device communication using AES encryption over TCP sockets, ensuring data privacy for biometric data transmission.',
     ],
     tags: ['Python', 'OpenCV', 'CNN', 'AES Encryption', 'ESP32', 'Deep Learning'],
     category: 'Embedded AI',
+  },
+  {
+    name: 'Insurance Claims Prediction',
+    field: 'Machine Learning & Actuarial Analytics',
+    period: 'Janv 2026',
+    repo: contacts.github,
+    points: [
+    'Modeled car insurance claim counts using Poisson GLM and XGBoost (Poisson objective) on the French MTPL dataset (~700k policies), achieving 48% deviance reduction over baseline.',
+    'Applied exposure offset modeling, risk-based feature engineering, and RandomizedSearchCV tuning to handle class imbalance and varying policy durations.',
+    ],
+    tags: ['Python', 'XGBoost', 'Poisson Regression', 'scikit-learn', 'Feature Engineering', 'Insurance Pricing'],
+    category: 'Machine Learning',
   },
   {
     name: 'FreeRTOS-Based Real-Time Robot Control',
