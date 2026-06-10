@@ -195,6 +195,13 @@ export const certifications = [
     file: './certs/iot-boards-postech.pdf',
     link: 'https://coursera.org/verify/ND68RM35EVHN',
   },
+  {
+    name: 'Certification of Program Completion',
+    issuer: 'Mitacs · Globalink',
+    year: '2025',
+    file: './certs/image.png',
+    link: '',
+  },
 ]
 
 export const skills = [
